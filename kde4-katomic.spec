@@ -5,11 +5,11 @@
 Summary:	KDE Sokoban clone
 Summary(pl.UTF-8):	Klon gry Sokoban dla KDE
 Summary(pt_BR.UTF-8):	Jogo semelhante ao Sokoban mas o objetivo é formar moléculas
-Group:		X11/Applications/Games
 Name:		kde4-katomic
 Version:	4.12.0
 Release:	1
 License:	GPL
+Group:		X11/Applications/Games
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	4fd770040c8c27f99f55c9dfdfeddb6f
 BuildRequires:	automoc4 >= 0.9.88
