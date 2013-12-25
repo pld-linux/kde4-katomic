@@ -5,7 +5,7 @@
 Summary:	KDE Sokoban clone
 Summary(pl.UTF-8):	Klon gry Sokoban dla KDE
 Summary(pt_BR.UTF-8):	Jogo semelhante ao Sokoban mas o objetivo é formar moléculas
-Name:		kde4-katomic
+Name:		kde4-%{orgname}
 Version:	4.12.0
 Release:	1
 License:	GPL
@@ -19,7 +19,7 @@ BuildRequires:	kde4-libkdegames-devel >= %{version}
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
-Obsoletes:	kde4-kdegames-katomic
+Obsoletes:	kde4-kdegames-%{orgname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -56,7 +56,7 @@ install -d $RPM_BUILD_ROOT/var/games
 # remove locolor icons
 rm -rf $RPM_BUILD_ROOT%{_iconsdir}/locolor
 
-%find_lang katomic	--with-kde
+%find_lang %{orgname}	--with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %post			-p /sbin/ldconfig
 %postun			-p /sbin/ldconfig
 
-%files -f katomic.lang
+%files -f %{orgname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/katomic
 %{_desktopdir}/kde4/katomic.desktop
