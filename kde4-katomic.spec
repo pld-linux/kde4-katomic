@@ -6,12 +6,12 @@ Summary:	KDE Sokoban clone
 Summary(pl.UTF-8):	Klon gry Sokoban dla KDE
 Summary(pt_BR.UTF-8):	Jogo semelhante ao Sokoban mas o objetivo é formar moléculas
 Name:		kde4-%{orgname}
-Version:	4.12.4
+Version:	4.13.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	5b3edb5fd4d867633c095d9f61fe2962
+# Source0-md5:	355ecdd6b33b8ad400f03c52e6570f26
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}
